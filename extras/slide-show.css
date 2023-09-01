@@ -1,0 +1,20 @@
+img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+
+}
+
+button {
+  position: relative;
+
+}
+
+.slides {
+  display: none;
+  border: 2px solid black;
+}
+
+.active {
+  display: block;
+}

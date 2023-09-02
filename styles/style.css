@@ -17,6 +17,7 @@ html {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 1;
 }
 
 #navbar-links {
@@ -201,20 +202,21 @@ html {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
-  height: 70%;
-  width: 100%;
+  gap: 50px;
+  height: 70vh;
+  width: 100vw;
 }
 
 .container__card {
-  height: 60%;
-  width: 300px;
+  width: 400px;
   text-align: center;
   box-shadow: 3px 6px 18px -4px rgba(0, 0, 0, 0.7);
   border: 5px solid transparent;
   transition: border-color 1s ease;
   border-radius: 20px;
   transition: transform 0.2s;
+  padding: 20px;
+  align-self: stretch;
 }
 
 .container__card:hover {
@@ -223,13 +225,17 @@ html {
 }
 
 .container__card--heading {
-  font-size: 30px;
+  font-size: 2.8vw;
   text-decoration: underline;
 }
 
 .container__card--image {
-  height: 100px;
-  width: 100px;
+  height: 20vh;
+  width: 18vw;
+}
+
+.container__card--text {
+  font-size: 2.5vw;
 }
 
 .container__contact--icon {

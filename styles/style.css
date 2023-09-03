@@ -23,12 +23,6 @@ html {
 
 #navbar-links {
   display: flex;
-  float: left;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  margin-top: 0;
-  padding-top: 0;
 }
 @media screen and (max-width: 641px) {
   #navbar-links {
@@ -43,8 +37,8 @@ html {
   }
 }
 
-/* Style the navbar links */
-#navbar a {
+/* Style the individual navbar link */
+nav a {
   float: left;
   text-align: center;
   padding: 15px;
@@ -62,18 +56,24 @@ html {
   }
 }
 
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
+#navbar a:hover,
 .active {
   background-color: #ddd;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
 .container__heading {
   font-family: "Montez", cursive;
-  letter-spacing: 0;
   text-align: center;
   color: rgb(254, 84, 84);
   transition: color 1s;
@@ -84,49 +84,25 @@ html {
   color: black;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  transition: float 1s;
-  overflow: auto;
-}
-
 .container__text {
   text-align: center;
   padding: 20px;
   margin: 20px;
   font-size: 3rem;
-  border-bottom: 2px solid rgb(0, 45, 114);
 }
 
-.container__text--about {
-  text-align: center;
-  padding: 20px;
-  margin: 20px;
-  font-size: 3rem;
-  /* opacity: 0; */
-}
-
-/* .appear-text {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-
-} */
 .flip__card {
   background-color: transparent;
-  width: 70%;
   height: 60%;
+  width: 50%;
   perspective: 1000px; /* For 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip__card__inner {
   position: relative;
-  width: 100%;
   height: 100%;
+  width: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -144,8 +120,8 @@ html {
 .flip__card__front,
 .flip__card__back {
   position: absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
   -webkit-backface-visibility: hidden;
   /* Safari */
   backface-visibility: hidden;
@@ -166,6 +142,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -173,8 +150,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   height: 20%;
   width: 70%;
   gap: 30px;
@@ -191,13 +168,12 @@ html {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 50px;
   height: 70vh;
   width: 100vw;
+  gap: 50px;
 }
 
 .container__card {
-  width: 400px;
   text-align: center;
   box-shadow: 3px 6px 18px -4px rgba(0, 0, 0, 0.7);
   border: 5px solid transparent;
@@ -205,6 +181,7 @@ html {
   border-radius: 20px;
   transition: transform 0.2s;
   padding: 20px;
+  width: 400px;
   align-self: stretch;
 }
 

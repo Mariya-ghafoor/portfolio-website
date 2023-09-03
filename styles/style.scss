@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  ;
+  font-size: 10px;
 }
 
 * {
@@ -20,7 +20,7 @@ html {
 
 .navbar {
   overflow: hidden;
-  font-size: 25px;
+  font-size: 2.5rem;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -85,7 +85,7 @@ html {
   text-align: center;
   color: rgb(254, 84, 84);
   transition: color 1s;
-  font-size: 10vh;
+  font-size: 5rem;
 
 }
 
@@ -106,7 +106,7 @@ html {
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-size: 5vh;
+  font-size: 3rem;
   border-bottom: 2px solid rgb(0, 45, 114);
 }
 
@@ -116,7 +116,7 @@ html {
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-size: 4vh;
+  font-size: 3rem;
   /* opacity: 0; */
 
 }
@@ -168,16 +168,18 @@ html {
   -webkit-backface-visibility: hidden;
   /* Safari */
   backface-visibility: hidden;
+
 }
 
 /* Style the front side */
 .flip__card__front {
-  font-size: 4vh;
+  
+  font-size: 3rem;
 }
 
 /* Style the back side */
 .flip__card__back {
-  font-size: 4vh;
+  font-size: 3rem;
   transform: rotateY(180deg);
 }
 
@@ -237,7 +239,7 @@ html {
 }
 
 .container__card--heading {
-  font-size: 5vh;
+  font-size: 4rem;
   text-decoration: underline;
   
 }
@@ -248,13 +250,17 @@ html {
 }
 
 .container__card--text {
-  font-size: 3vw;
+  font-size: 2.5rem;
+}
+
+.container__card--icon {
+  font-size: 2rem;
 }
 
 // Contact
 
 .container__contact--icon {
-  font-size: 50px;
+  font-size: 3rem;
   padding: 10px;
 }
 

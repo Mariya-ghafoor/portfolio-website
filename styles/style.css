@@ -77,7 +77,7 @@ nav a {
   text-align: center;
   color: rgb(254, 84, 84);
   transition: color 1s;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 .container__heading:hover {
@@ -88,7 +88,7 @@ nav a {
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .flip__card {
@@ -209,7 +209,7 @@ nav a {
 }
 
 .container__contact--icon {
-  font-size: 3rem;
+  font-size: 5rem;
   padding: 10px;
 }
 

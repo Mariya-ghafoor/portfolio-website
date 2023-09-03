@@ -84,7 +84,7 @@ nav{
   text-align: center;
   color: $font-heading;
   transition: color 1s;
-  font-size: 5rem;
+  font-size: 7rem;
 
 }
 
@@ -96,7 +96,7 @@ nav{
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 //Skills
@@ -152,9 +152,7 @@ nav{
 }
 
 .flip__card__box {
-  @include flexbox(row,wrap);
-  // flex-wrap: wrap;
-  
+  @include flexbox(row,wrap); 
 }
 
 .flip__card__box--icons {
@@ -219,7 +217,7 @@ nav{
 // Contact
 
 .container__contact--icon {
-  font-size: 3rem;
+  font-size: 5rem;
   padding: 10px;
 }
 

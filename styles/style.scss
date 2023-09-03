@@ -20,7 +20,7 @@ html {
 
 .navbar {
   overflow: hidden;
-  font-size: 20px;
+  font-size: 25px;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -30,7 +30,6 @@ html {
 
 #navbar-links {
   display: flex;
-  // background-color: rgba(128, 128, 128, 0.31);
   float: left;
   text-align: center;
   padding: 15px;
@@ -42,7 +41,6 @@ html {
     display: none;
     height: 90vh;
     width: 90vw;
-    /* font-size: 30px; */
   }
 
   @media screen and (min-width:642px) {
@@ -77,7 +75,6 @@ html {
 }
 
 .active {
-  text-decoration: line-through;
   background-color: #ddd;
 }
 
@@ -88,7 +85,7 @@ html {
   text-align: center;
   color: rgb(254, 84, 84);
   transition: color 1s;
-  font-size: 50px;
+  font-size: 10vh;
 
 }
 
@@ -109,10 +106,8 @@ html {
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-size: 40px;
+  font-size: 5vh;
   border-bottom: 2px solid rgb(0, 45, 114);
-
-
 }
 
 
@@ -121,7 +116,7 @@ html {
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-size: 40px;
+  font-size: 4vh;
   /* opacity: 0; */
 
 }
@@ -133,16 +128,7 @@ html {
 } */
 
 //Skills
-.container__text--skills {
-  font-size: 100px;
-  
-}
 
-.container__text--skills .fa:hover {
-  box-shadow: 3px 6px 18px -4px rgba(0,0,0,0.7);
-
-
-}
 
 
 // *********
@@ -151,9 +137,7 @@ html {
   background-color: transparent;
   width: 70%;
   height: 60%;
-  // border: 1px solid #f1f1f1;
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; /* For 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -186,17 +170,14 @@ html {
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+/* Style the front side */
 .flip__card__front {
-  /* background-color: #bbb; */
-  // color: black;
-  font-size: 30px;
+  font-size: 4vh;
 }
 
 /* Style the back side */
 .flip__card__back {
-  // background-color: dodgerblue;
-  font-size: 30px;
+  font-size: 4vh;
   transform: rotateY(180deg);
 }
 
@@ -224,8 +205,6 @@ html {
 }
 
 
-
-//**********
 
 // Projects 
 
@@ -258,7 +237,7 @@ html {
 }
 
 .container__card--heading {
-  font-size: 2.8vw;
+  font-size: 5vh;
   text-decoration: underline;
   
 }
@@ -269,7 +248,7 @@ html {
 }
 
 .container__card--text {
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 // Contact
